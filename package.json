@@ -1,0 +1,51 @@
+{
+  "name": "nextjs-langchain-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run generate && next build",
+    "generate": "npx ts-node ./scripts/generate.ts",
+    "start": "next start",
+    "lint": "next lint",
+    "vercel-build": "echo hello"
+  },
+  "dependencies": {
+    "@datastax/astra-db-ts": "^1.2.0",
+    "@langchain/community": "^0.2.4",
+    "@langchain/openai": "^0.0.33",
+    "@upstash/redis": "^1.31.1",
+    "ai": "^3.1.12",
+    "cassandra-driver": "^4.7.2",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "groq-sdk": "^0.4.0",
+    "langchain": "^0.2.0",
+    "lucide-react": "^0.379.0",
+    "next": "^14.2.3",
+    "next-themes": "^0.3.0",
+    "openai": "^4.47.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "tailwind-merge": "^2.3.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "@langchain/core": "0.2.0"
+  }
+}
